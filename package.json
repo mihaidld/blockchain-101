@@ -1,0 +1,14 @@
+{
+  "name": "blockchain-101",
+  "version": "1.0.0",
+  "author": "mihaidld <mihaidoldur@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./": "./src/"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "prettier": "^2.1.2"
+  }
+}
