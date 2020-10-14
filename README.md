@@ -90,7 +90,7 @@ In order to add a malicious block, an attacker would have to own 51% of all the 
 
 Ethereum has historically operated a proof-of-work consensus. However, one reason for moving to proof-of-stake is that it’s generally considered to be far more energy-efficient than proof-of-work.
 
-### **Ethereum Scaling**
+#### **Ethereum Scaling**
 
 For any developer who has tried to build a decentralized application used by the masses, it is clear that Ethereum—in its current manifestation—isn’t quite ready. Transactions take a long time to clear (low performance in `transactions per second` (TPS)) and paying for every basic function is expensive and creates a poor user experience. It all boils down to a general ‘scalability’ problem. Both poor throughput and cost have been massive barriers to any meaningful adoption.
 
@@ -232,7 +232,7 @@ A crypto wallet & gateway to blockchain apps.
 -   Rinkeby
 -   Goerli
 
-We can also configure personal networks, it will be useful when we will run our local `ganache` node.
+We can also configure personal networks, it will be useful when running our local `ganache` node.
 
 Networks comparison: https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets
 
@@ -269,9 +269,7 @@ You have to browse the Etherscan version of the network you want to get informat
 Access to remix: https://remix.ethereum.org  
 Remix is a web IDE (like CodePen for Javascript).
 On remix we can write, deploy and depoy a contract. We can also interact with a deployed contract.  
-Remix is pretty good for learning `Solidity` and test quickly small smart contracts, but it is not an option for serious project.
-
-_remix live coding..._
+Remix is pretty good for learning `Solidity` and test quickly small smart contracts, but it is not an option for a serious project.
 
 ## **Ganache**
 
@@ -282,31 +280,31 @@ Ganache is a local development Ethereum node, for fast deployment and testing.
 `Block header`: A data structure containing all information of a block. It is used as an identifier of a block  
 `Block hash`: A Block Hash is a reference number for a block in the blockchain. You get a Block Hash by hashing the block header  
 `Block reward`: The reward a miner get if he successfully mines a block. Actually 2 ETH on Ethereum  
-`BTC`: Bitcoin cryptocurrency
-`Bytecode` is program code that has been compiled from source code (e.g. Solidity) into low-level code designed for a software interpreter. It may be executed by a virtual machine (such as a EVM) or further compiled into machine code, which is recognized by the processor.
+`BTC`: Bitcoin cryptocurrency  
+`Bytecode` is program code that has been compiled from source code (e.g. Solidity) into low-level code designed for a software interpreter. It may be executed by a virtual machine (such as a EVM) or further compiled into machine code, which is recognized by the processor.  
 `DAO`: Decentralized Autonomous Organization  
 `cryptographic hash`: see `hash`  
 `cryptographic hash function`: see `hasing function`  
-`cryptocurrency wallet` : a device, program or a service which stores the public and/or private keys, can encrypt and sign (e.g. for executing a smart contract, a cryptocurrency transaction, identification or legally signing a 'document')
+`cryptocurrency wallet` : a device, program or a service which stores the public and/or private keys, can encrypt and sign (e.g. for executing a smart contract, a cryptocurrency transaction, identification or legally signing a 'document')  
 `Difficulty`: This describes how difficult, in relation to the genesis block, the target will be to reach.  
-`DDoS`: Distributed Denial of Service attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.
+`DDoS`: Distributed Denial of Service attack is a malicious attempt to disrupt the normal traffic of a targeted server, service or network by overwhelming the target or its surrounding infrastructure with a flood of Internet traffic.  
 `ECDSA`: Elliptic Curve Digital Signature Algorithm  
-`EIP`: Ethereum Improvement Proposals
+`EIP`: Ethereum Improvement Proposals  
 `ETH`: Ethereum/Ether cryptocurrency  
 `EVM`: Ethereum Virtual Machine  
-`Faucet` : website which gives away free cryptocurrency to any IP address that connects to them (originated as a means to increase awareness and interest in cryptocurrencies), platform for getting testnet Ethers
-`gateway`: a node (router) in a computer network, a key stopping point for data on its way to or from other networks. Thanks to gateways, we are able to communicate and send data back and forth.
-`Genesis block`: The first block of a blockchain. It is the basis on which additional blocks are added to form a chain of blocks, hence the term blockchain. This block is sometimes referred to Block 0.
-`hash`: A unique identifier of a data.
-`hashing function`: take an input, file or data, and generate a `hash`of this input
-`Miner` : The individuals and companies who process blocks
-`opcode` (operation code) is the portion of a machine language instruction that specifies the operation to be performed.
-`PoW`: Proof of Work `PoS`: Proof of Stake
-`Sandboxing` is a software management strategy that isolates applications from critical system resources and other programs and so, provides an extra layer of security that prevents malware or harmful applications from negatively affecting the system
-`SPDX` (Software Package Data Exchange) tag declares the license the file is under and should be placed at or near the top of the file in a comment (e.g. MIT).
-`SPOF`: Single Point Of Failure
-`stack` is an abstract data type that serves as a collection of elements, with two main principal operations: push, which adds an element to the collection, and. pop, which removes the most recently added element that was not yet removed.
+`Faucet` : website which gives away free cryptocurrency to any IP address that connects to them (originated as a means to increase awareness and interest in cryptocurrencies), platform for getting testnet Ethers  
+`gateway`: a node (router) in a computer network, a key stopping point for data on its way to or from other networks. Thanks to gateways, we are able to communicate and send data back and forth.  
+`Genesis block`: The first block of a blockchain. It is the basis on which additional blocks are added to form a chain of blocks, hence the term blockchain. This block is sometimes referred to Block 0.  
+`hash`: A unique identifier of a data.  
+`hashing function`: take an input, file or data, and generate a `hash`of this input  
+`Miner` : The individuals and companies who process blocks  
+`opcode` (operation code) is the portion of a machine language instruction that specifies the operation to be performed.  
+`PoW`: Proof of Work `PoS`: Proof of Stake  
+`Sandboxing` is a software management strategy that isolates applications from critical system resources and other programs and so, provides an extra layer of security that prevents malware or harmful applications from negatively affecting the system  
+`SPDX` (Software Package Data Exchange) tag declares the license the file is under and should be placed at or near the top of the file in a comment (e.g. MIT).  
+`SPOF`: Single Point Of Failure  
+`stack` is an abstract data type that serves as a collection of elements, with two main principal operations: push, which adds an element to the collection, and. pop, which removes the most recently added element that was not yet removed.  
 `stack based virtual machine` is an abstraction of a computer, that emulates a real machine. Generally it is built as an interpreter of a special bytecode, that translates its in real time for execution on the CPU.
-E.g. to add two numbers in a stack VM, the program will push the first number to the stack, push the second and then execute some form of the special instruction "add", that will pop the first two elements of the stack and replace them with their sum
-`Target`: The number that the block hash must be less than in order to be valid. The target adjusts every 2016 blocks (roughly two weeks) to try and ensure that blocks are mined once every 8-10 minutes on average (in Bitcoin).
+E.g. to add two numbers in a stack VM, the program will push the first number to the stack, push the second and then execute some form of the special instruction "add", that will pop the first two elements of the stack and replace them with their sum.  
+`Target`: The number that the block hash must be less than in order to be valid. The target adjusts every 2016 blocks (roughly two weeks) to try and ensure that blocks are mined once every 8-10 minutes on average (in Bitcoin).  
 `Testnets` (test networks) are "play money" so that devs can try out applications without spending real money. Applications are typically deployed on testnets before eventually being deployed on the main network.
